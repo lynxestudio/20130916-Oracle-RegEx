@@ -95,9 +95,8 @@ tengan de 1 a 2 veces la letra A y cuyo posición de coincidencia del texto sea 
 <div>
 <IMG src="picture_library/oraregexp/fig6.png"
 ></div><br>
-<p>Un último ejemplo con <b>REGEXP_INSTR</b> buscamos todos los registros que en la columna 
-    MEMBERSHIP_DATE terminen en el penúltimo dígito del 0 al 9 y en el último dígito 
-    del 1 al 2.</p>
+<p align="justify">
+Un último ejemplo con <b>REGEXP_INSTR</b> buscamos todos los registros que en lacolumna MEMBERSHIP_DATE terminen en el penúltimo dígito del 0 al 9 y en el último dígito del 1 al 2.</p>
 <div>
 <IMG src="picture_library/oraregexp/query6.png">
 </div><br>
