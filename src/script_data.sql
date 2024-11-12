@@ -1,0 +1,13 @@
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Elizabeth','Bishop','36736-36738','976.063','02/08/1911');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Charles','Dickens','36734-5461','2244.789','07/02/1812');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Jack','London','5462-37314','898.127','12/01/1876');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Joseph','Conrad','37315-5463','1193.493','03/12/1857');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Gustave','Flaubert','37313-37316','1435.384','12/12/1821');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'John','Milton','37317-37296','1348.582','09/12/1608');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Samuel','Taylor','37292-37318','207.449','21/10/1772');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Virginia','Wolf','37061-106','2077.947','25/01/1882');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Walter','Scott','37319-37320','412.72','15/08/1771');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Robert','Louis','Stevenson','37945-37946','1033.54');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Joseph','Rudyard','Kipling','37947-12556','382.41');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'Arthur','Conan','Doyle','12557-10964','1844.945');
+Insert into membership(membership_id,membership_name,membership_lastname,membership_number,membership_due,membership_date)Value(1,'George','Orwell','54722-3236','2139.874','25/01/1903');

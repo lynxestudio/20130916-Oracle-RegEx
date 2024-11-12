@@ -27,10 +27,7 @@ Oracle tiene las siguientes cuatro funciones para su utilización:
 <li><b>REGEXP_SUBSTR:</b> extrae una coincidencia de texto encontrada con la expresión regular.</li>
 <li><b>REGEXP_REPLACE:</b> ejecuta una operación de búsqueda y reemplazo si se encuentra una coincidencia en el texto.</li>
 </ul>
-<p>Como ejemplo de su uso, creamos la siguiente tabla:</p>
-<div>
-<IMG src="picture_library/oraregexp/tbMemberShip.png">
-</div>
+<p>Utilizamos el <i>create_script.sql</i> para crear la siguiente tabla</p>
 <br>
 <p>Después insertamos los siguientes registros para comenzar a utilizar las funciones.</p>
 <pre>
@@ -49,57 +46,57 @@ Arthur Conan Doyle 12557-10964 1844.945 22/05/1859
 George  Orwell 54722-3236 2139.874 25/01/1903
 </pre>
 <div>
-<IMG src="picture_library/oraregexp/fig1.png">
+<IMG src="images/fig1.png">
 </div><br>
 <p align="justify">Como primer ejemplo utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_LASTNAME</i>
 los regitros que comienzan con la letra D.La consulta es:</p>
 <div>
-<IMG src="picture_library/oraregexp/query1.png">
+<IMG src="images/query1.png">
 </div><br>
 <div>
-<IMG src="picture_library/oraregexp/fig2.png">
+<IMG src="images/fig2.png">
 </div>
 <br>
 <p>Ahora utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_DUE</i>
 los regitros que terminan con el número 3.La consulta es:</p>
 <div>
-<IMG src="picture_library/oraregexp/query2.png">
+<IMG src="images/query2.png">
 </div><br>
 <div>
-<IMG src="picture_library/oraregexp/fig3.png">
+<IMG src="images/fig3.png">
 </div>
 <br>
 <p>Por último, utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_LASTNAME</i>
 los regitros que tengan las letras de la A a la F.  La consulta es:</p>
 <div>
-<IMG src="picture_library/oraregexp/query3.png">
+<IMG src="images/query3.png">
 </div><br>
 <div>
-<IMG src="picture_library/oraregexp/fig4.png">
+<IMG src="images/fig4.png">
 </div><br>
 <p>Ahora ejemplos con la función <b>REGEXP_INSTR</b>. En el primer ejemplo
 buscamos los registros que en la columna MEMBERSHIP_NAME 
 tengan de 1 a 2 veces la letra A y cuyo posición de coincidencia del texto sea mayor 
     a 0.</p>
 <div>
-<IMG src="picture_library/oraregexp/query4.png">
+<IMG src="images/query4.png">
 </div><br>
 <div>
-<IMG src="picture_library/oraregexp/fig5.png">
+<IMG src="images/fig5.png">
 </div><br>
 <p>En este segundo ejemplo con <b>REGEXP_INSTR</b> buscamos todos los registros que en la columna 
     MEMBERSHIP_NAME comiencen con la letra J o la letra E.</p>
 <div>
-<IMG src="picture_library/oraregexp/query5.png">
+<IMG src="images/query5.png">
 </div><br>
 <div>
-<IMG src="picture_library/oraregexp/fig6.png"
+<IMG src="images/fig6.png"
 ></div><br>
 <p align="justify">
 Un último ejemplo con <b>REGEXP_INSTR</b> buscamos todos los registros que en lacolumna MEMBERSHIP_DATE terminen en el penúltimo dígito del 0 al 9 y en el último dígito del 1 al 2.</p>
 <div>
-<IMG src="picture_library/oraregexp/query6.png">
+<IMG src="images/query6.png">
 </div><br>
 <div>
-<IMG src="picture_library/oraregexp/fig7.png">
+<IMG src="images/fig7.png">
 </div>
