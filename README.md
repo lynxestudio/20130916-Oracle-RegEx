@@ -51,16 +51,21 @@ George  Orwell 54722-3236 2139.874 25/01/1903
 <p align="justify">Como primer ejemplo utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_LASTNAME</i>
 los regitros que comienzan con la letra D.La consulta es:</p>
 <div>
-<IMG src="images/query1.png">
+<pre>
+--Query with a regular expression to get all records that start with D
+SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE
+FROM membership WHERE regexp_like(MEMBERSHIP_LASTNAME,'^D');
+</pre>
 </div><br>
-<div>
-<IMG src="images/fig2.png">
-</div>
 <br>
 <p>Ahora utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_DUE</i>
 los regitros que terminan con el número 3.La consulta es:</p>
 <div>
-<IMG src="images/query2.png">
+<pre>
+--Query with a regular expression to get all records that end with 3
+SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE
+FROM membership WHERE regexp_like(MEMBERSHIP_DUE,'3$');
+</pre>
 </div><br>
 <div>
 <IMG src="images/fig3.png">
@@ -69,7 +74,11 @@ los regitros que terminan con el número 3.La consulta es:</p>
 <p>Por último, utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_LASTNAME</i>
 los regitros que tengan las letras de la A a la F.  La consulta es:</p>
 <div>
-<IMG src="images/query3.png">
+<pre>
+--Query with a regular expression to get all records containing A to F
+SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE
+FROM membership WHERE regexp_like(MEMBERSHIP_LASTNAME,'[A-F]');
+</pre>
 </div><br>
 <div>
 <IMG src="images/fig4.png">
@@ -79,7 +88,11 @@ buscamos los registros que en la columna MEMBERSHIP_NAME
 tengan de 1 a 2 veces la letra A y cuyo posición de coincidencia del texto sea mayor 
     a 0.</p>
 <div>
-<IMG src="images/query4.png">
+<pre>
+--Query to get all records having 1 or 2 times the character A 
+SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE
+FROM membership WHERE regexp_instr(MEMBERSHIP_NAME,'A{1,2}') > 0;
+</pre>
 </div><br>
 <div>
 <IMG src="images/fig5.png">
@@ -87,7 +100,11 @@ tengan de 1 a 2 veces la letra A y cuyo posición de coincidencia del texto sea 
 <p>En este segundo ejemplo con <b>REGEXP_INSTR</b> buscamos todos los registros que en la columna 
     MEMBERSHIP_NAME comiencen con la letra J o la letra E.</p>
 <div>
-<IMG src="images/query5.png">
+<pre>
+--Query to get all records that start with a J or E
+SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE
+FROM membership WHERE regexp_instr(MEMBERSHIP_NAME,'^[J|E]') > 0;
+</pre>
 </div><br>
 <div>
 <IMG src="images/fig6.png"
@@ -95,7 +112,12 @@ tengan de 1 a 2 veces la letra A y cuyo posición de coincidencia del texto sea 
 <p align="justify">
 Un último ejemplo con <b>REGEXP_INSTR</b> buscamos todos los registros que en lacolumna MEMBERSHIP_DATE terminen en el penúltimo dígito del 0 al 9 y en el último dígito del 1 al 2.</p>
 <div>
-<IMG src="images/query6.png">
+<pre>
+--Query to get all records containing [0-9] in the penultimate digit
+--  and 1 to 2 in the last digit 
+SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE,MEMBERSHIP_DATE
+FROM membership WHERE regexp_instr(MEMBERSHIP_DATE,'[0-9][1-2]$') > 0;
+</pre>
 </div><br>
 <div>
 <IMG src="images/fig7.png">
