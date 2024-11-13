@@ -28,7 +28,9 @@ Oracle tiene las siguientes cuatro funciones para su utilización:
 <li><b>REGEXP_REPLACE:</b> ejecuta una operación de búsqueda y reemplazo si se encuentra una coincidencia en el texto.</li>
 </ul>
 <p>Utilizamos el <i>create_script.sql</i> para crear la siguiente tabla</p>
-<br>
+<div>
+<IMG src="images/Table.png">
+</div><br>
 <p>Después insertamos los siguientes registros para comenzar a utilizar las funciones.</p>
 <pre>
 Elizabeth  Bishop 36736-36738 976.063 02/08/1911
