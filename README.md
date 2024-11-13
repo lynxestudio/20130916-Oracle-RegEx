@@ -57,6 +57,9 @@ SELECT MEMBERSHIP_NAME,MEMBERSHIP_LASTNAME,MEMBERSHIP_DUE
 FROM membership WHERE regexp_like(MEMBERSHIP_LASTNAME,'^D');
 </pre>
 </div><br>
+<div>
+<IMG src="images/fig2.png">
+</div>
 <br>
 <p>Ahora utilizamos la función <b>REGEXP_LIKE</b> para obtener de la columna <i>MEMBERSHIP_DUE</i>
 los regitros que terminan con el número 3.La consulta es:</p>
@@ -122,3 +125,6 @@ FROM membership WHERE regexp_instr(MEMBERSHIP_DATE,'[0-9][1-2]$') > 0;
 <div>
 <IMG src="images/fig7.png">
 </div>
+<p>
+<b>Estos ejemplos son para versiones 10.x o superior de Oracle.</b>
+</p>
