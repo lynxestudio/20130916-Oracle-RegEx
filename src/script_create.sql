@@ -1,4 +1,8 @@
+--Drop table
+--drop table Membership;
+
 --Create the TABLE
+
 CREATE TABLE Membership
 (
  membership_id        number(4) primary key,
